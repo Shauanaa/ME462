@@ -85,10 +85,10 @@ project_root/
 ├── /03_Codes
 │   └── 01_Air_Hockey/
 │       ├── neopixel_led.py
+|       ├── qr_code_label_and_centroid_detection.py
 │       └── camera_controller.py
 │   └── 02_Micro_Robot/
-│       ├── neopixel_led.py
-│       └── camera_controller.py
+│       └── micro_robot.py
 
 ```
 

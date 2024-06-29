@@ -79,7 +79,7 @@ The mini robot is controlled by:
 ## 🖥️ How to Use the Code
 
 The folder structure is descripted as below:
-'''bash
+'''
 project_root/
 │
 ├── AirHockey/

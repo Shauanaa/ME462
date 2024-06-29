@@ -7,7 +7,7 @@
 - [AirHockey](#airhockey)
   - [Mechanical](#mechanical)
   - [Software](#software)
-- [Mini Robot](#mini-robot)
+- [Mini Robot](#🤖 Mini Robot)
   - [Mechanical](#mechanical-1)
   - [Software](#software-1)
 - [How to Use the Code](#how-to-use-the-code)

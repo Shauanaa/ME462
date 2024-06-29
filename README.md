@@ -10,6 +10,7 @@
 - [Mini Robot](#mini-robot)
   - [Mechanical](#mechanical-1)
   - [Software](#software-1)
+- [Cautions](#cautions)
 - [Contribution](#contribution)
 - [License](#license)
 
@@ -52,6 +53,12 @@ The mini robot features:
 The mini robot is controlled by:
 
 - Wireless communication with the main computer using socket connection
+
+## ⚠️ Cautions
+
+When using this system, please be aware of the following:
+
+- The IP address of the microrobot changes when connecting to different networks. Always ensure you have the correct IP address before attempting to connect or control the microrobot.
 
 
 ## 🤝 Contribution

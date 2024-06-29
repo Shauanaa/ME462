@@ -70,6 +70,7 @@ The mini robot features:
 - Modular design for easy maintenance and upgrades
 
 ### Software
+The mini robot features two motors controlled by an ESP8266 microcontroller. A microROS setup on the ESP enables remote control, allowing for precise maneuvering. Additionally, the robot is equipped with a controllable propeller, enhancing its movement capabilities. This combination of dual-motor drive, wireless control, and propeller system creates a versatile and responsive robot, ideal for dynamic air hockey gameplay.
 
 The mini robot is controlled by:
 

@@ -87,12 +87,14 @@ project_root/
 │       ├── neopixel_led.py
 |       ├── qr_code_label_and_centroid_detection.py
 │       └── camera_controller.py
+│       └── Readme.md
 │   └── 02_Micro_Robot/
 |       ├── esp8266_espnow/
 │           └── esp8266_espnow.ino
 │       └── esp8266_espnow_agents/
 │           └── esp8266_espnow_agents.ino
 │           └── motor.ino
+│       └── Readme.md
 
 ```
 

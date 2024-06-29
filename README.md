@@ -108,7 +108,10 @@ pip install -e .
 '''
 
 #### 3. Configure the System
-- Update the `config.py` file with your specific settings, including the IP address of the mini robot.
+- In Raspberry pi linux computer, you must write:
+  ```
+colcon build
+```
 
 #### 4. Run the Air Hockey System
 

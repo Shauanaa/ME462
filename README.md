@@ -1,4 +1,4 @@
-# 🏒 AirHockey and Mini Robot Project
+# 🏒 AirHockey and Micro Robot Project
 ![istockphoto-1455938819-612x612 (1)](https://github.com/Shauanaa/ME462/assets/44114999/967f291a-d41e-4c4b-b271-bce5b575ca1f)
 
 
@@ -7,7 +7,7 @@
 - [AirHockey](#airhockey)
   - [Mechanical](#mechanical)
   - [Software](#software)
-- [Mini Robot](#mini-robot)
+- [Micro Robot](#micro-robot)
   - [Mechanical](#mechanical-1)
   - [Software](#software-1)
 - [How to Use the Code](#how-to-use-the-code)
@@ -18,7 +18,7 @@
 
 
 ## 🎯 Project Abstract
-This project integrates an IoT-enabled air hockey table with a remotely-controllable microrobot, creating diverse game scenarios. It showcases the fusion of mechanical engineering and software development to produce an interactive, entertaining system that reimagines classic gameplay through modern technology.
+This project integrates an IoT-enabled air hockey table with a remotely-controllable micro robot, creating diverse game scenarios. It showcases the fusion of mechanical engineering and software development to produce an interactive, entertaining system that reimagines classic gameplay through modern technology.
 
 ## 🏒 AirHockey
 
@@ -56,13 +56,13 @@ The air hockey system is powered by:
 - Pip installable python code
   
 
-## 🤖 Mini Robot
+## 🤖 Micro Robot
 
 ### Mechanical
 
-The mini robot's chassis is additively manufactured using Creality 3D printers, offering a lightweight yet durable design. The chassis is engineered to house and protect all electronic components from external damage. Two strategically positioned motors control the robot's movement, enabling precise maneuvering and agile performance on the air hockey table. This combination of 3D-printed structure and dual-motor system results in a compact, resilient robot capable of swift and accurate movements during gameplay.
+The micro robot's chassis is additively manufactured using Creality 3D printers, offering a lightweight yet durable design. The chassis is engineered to house and protect all electronic components from external damage. Two strategically positioned motors control the robot's movement, enabling precise maneuvering and agile performance on the air hockey table. This combination of 3D-printed structure and dual-motor system results in a compact, resilient robot capable of swift and accurate movements during gameplay.
 
-The mini robot features:
+The micro robot features:
 
 - Compact, agile design for quick movements
 - Remotely Controllable motors
@@ -70,11 +70,11 @@ The mini robot features:
 - Modular design for easy maintenance and upgrades
 
 ### Software
-The mini robot features two motors controlled by an ESP8266 microcontroller. A microROS setup on the ESP enables remote control, allowing for precise maneuvering. Additionally, the robot is equipped with a controllable propeller, enhancing its movement capabilities. This combination of dual-motor drive, wireless control, and propeller system creates a versatile and responsive robot, ideal for dynamic air hockey gameplay.
+The micro robot features two motors controlled by an ESP8266 microcontroller. An ESP-NOW controller enables remote control of the micro-robots, allowing for precise maneuvering. Additionally, the robot is equipped with a controllable propeller, enhancing its movement capabilities. This combination of dual-motor drive, wireless control, and propeller system creates a versatile and responsive robot, ideal for dynamic air hockey gameplay.
 
-The mini robot is controlled by:
+The micro robot is controlled by:
 
-- Wireless communication with the main computer using micro ROS connection
+- You by publishing a message to the relevant topic, Raspberry Pi communicating with a controller ESP8266 via serial communication to send commands, controller ESP communicating with the micro robot ESP8266 using ESP-NOW protocol, and finally, the micro robot ESP applying the command.
 
 ## 🖥️ How to Use the Code
 
@@ -123,6 +123,7 @@ colcon build
 #### 4. Run the Air Hockey System
 
 #### 5. Control the Mini Robot
+Run the commander code and publish to the topic.
 
 #### 6. Additional Commands
 - To calibrate the camera: `python calibrate_camera.py`
@@ -135,7 +136,7 @@ For more detailed instructions and troubleshooting, please refer to the `docs` f
 
 When using this system, please be aware of the following:
 
-- The IP address of the microrobot changes when connecting to different networks. Always ensure you have the correct IP address before attempting to connect or control the microrobot.
+- The IP address of the Raspberry Pi changes when connecting to different networks. Always ensure you have the correct IP address before attempting to connect to the Raspberry Pi.
 
 
 ## 🤝 Contribution
@@ -156,10 +157,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 <p align="center">
   Made with ❤️ by the AirHockey and Mini Robot Team:
-  Berk Ünlü 
-  Sait Burak Yücekaya
-  Yunus Çınar Kızıltepe
-  Tan Çağatay Acar
-  Doğukan Özoğul
+  Berk Ünlü, 
+  Sait Burak Yücekaya,
+  Yunus Çınar Kızıltepe,
+  Tan Çağatay Acar,
+  Doğukan Özoğul,
   Candaş Uysal
 </p>

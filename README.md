@@ -54,6 +54,28 @@ The mini robot is controlled by:
 
 - Wireless communication with the main computer using socket connection
 
+## 🖥️ How to Use the Code
+
+To get started with the AirHockey and Mini Robot project, follow these steps:
+
+#### 1. Clone the Repository
+#### 2. Install Dependencies
+Ensure you have Python installed, then run:
+
+#### 3. Configure the System
+- Update the `config.py` file with your specific settings, including the IP address of the mini robot.
+
+#### 4. Run the Air Hockey System
+
+#### 5. Control the Mini Robot
+
+#### 6. Additional Commands
+- To calibrate the camera: `python calibrate_camera.py`
+- To test the LED system: `python test_leds.py`
+
+For more detailed instructions and troubleshooting, please refer to the `docs` folder.
+
+
 ## ⚠️ Cautions
 
 When using this system, please be aware of the following:

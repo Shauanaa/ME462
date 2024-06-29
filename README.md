@@ -59,6 +59,7 @@ The mini robot is controlled by:
 ## 🖥️ How to Use the Code
 
 The folder structure is descripted as below:
+'''bash
 project_root/
 │
 ├── AirHockey/
@@ -69,6 +70,7 @@ project_root/
 └── MiniRobot/
     └── Software/
         └── minirobot_controller.py
+'''
 
 
 To get started with the AirHockey and Mini Robot project, follow these steps:

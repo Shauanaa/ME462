@@ -7,7 +7,7 @@
 - [AirHockey](#airhockey)
   - [Mechanical](#mechanical)
   - [Software](#software)
-- [Mini Robot](#🤖 Mini Robot)
+- [Mini Robot](#mini-robot)
   - [Mechanical](#mechanical-1)
   - [Software](#software-1)
 - [How to Use the Code](#how-to-use-the-code)
@@ -78,6 +78,7 @@ The mini robot is controlled by:
 
 ## 🖥️ How to Use the Code
 
+Each entity in this project has its own readme file in details. HEre's the quick introduction version.
 The folder structure is descripted as below:
 ```
 project_root/
@@ -87,8 +88,14 @@ project_root/
 │       ├── neopixel_led.py
 |       ├── qr_code_label_and_centroid_detection.py
 │       └── camera_controller.py
+│       └── Readme.md
 │   └── 02_Micro_Robot/
-│       └── micro_robot.py
+|       ├── esp8266_espnow/
+│           └── esp8266_espnow.ino
+│       └── esp8266_espnow_agents/
+│           └── esp8266_espnow_agents.ino
+│           └── motor.ino
+│       └── Readme.md
 
 ```
 

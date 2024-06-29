@@ -82,14 +82,14 @@ The folder structure is descripted as below:
 ```
 project_root/
 │
-├── AirHockey/
-│   └── Software/
+├── /03_Codes
+│   └── 01_Air_Hockey/
 │       ├── neopixel_led.py
 │       └── camera_controller.py
-│
-└── MiniRobot/
-    └── Software/
-        └── minirobot_controller.py
+│   └── 02_Micro_Robot/
+│       ├── neopixel_led.py
+│       └── camera_controller.py
+
 ```
 
 

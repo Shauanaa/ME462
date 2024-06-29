@@ -78,6 +78,7 @@ The mini robot is controlled by:
 
 ## 🖥️ How to Use the Code
 
+Each entity in this project has its own readme file in details. HEre's the quick introduction version.
 The folder structure is descripted as below:
 ```
 project_root/

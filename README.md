@@ -88,7 +88,11 @@ project_root/
 |       ├── qr_code_label_and_centroid_detection.py
 │       └── camera_controller.py
 │   └── 02_Micro_Robot/
-│       └── micro_robot.py
+|       ├── esp8266_espnow/
+│           └── esp8266_espnow.ino
+│       └── esp8266_espnow_agents/
+│           └── esp8266_espnow_agents.ino
+│           └── motor.ino
 
 ```
 

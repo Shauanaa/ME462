@@ -17,5 +17,7 @@ The electonics are fitted in such a small compartment that we need the smallest 
 * On/Off Switch
 * Female Headers and Wires
 
+The pin assignments are present in the codes provided.
+
 ### Software
-The ESP8266 microcontroller is coded with Arduino IDE. 2 codes are present, `esp8266_espnow_agents` code is for the robots. The `AGENT_ID` should be unique for each robot that will operate simultanously. `esp8266_espnow` code is for the controller ESP8266 that is used to communicate with the robots.
+The ESP8266 microcontroller is coded with Arduino IDE. 2 codes are present, `esp8266_espnow_agents` code is for the robots. The `AGENT_ID` should be unique for each robot that will operate simultaneously. `esp8266_espnow` code is for the controller ESP8266 that is used to communicate with the robots. This controller should be connected to your PC or the Raspberry Pi via a USB cable to be able to control the robots. `MAX_AGENTS` parameter dictates the maximum number of robots to be controlled simultaneously. Also, the robots should have ids lower than this value!

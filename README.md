@@ -1,5 +1,5 @@
 # 🏒 AirHockey and Mini Robot Project
-![Project Banner][istockphoto-1455938819-612x612](https://github.com/Shauanaa/ME462/assets/44114999/e2ede8d3-9929-4a0c-93e1-5609a7262820)
+![istockphoto-1455938819-612x612](https://github.com/Shauanaa/ME462/assets/44114999/e2ede8d3-9929-4a0c-93e1-5609a7262820)
 
 
 ## 📚 Table of Contents

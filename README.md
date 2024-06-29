@@ -109,7 +109,7 @@ pip install -e .
 
 #### 3. Configure the System
 - In Raspberry pi linux computer, you must write:
-  ```
+```
 colcon build
 ```
 

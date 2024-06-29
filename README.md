@@ -23,15 +23,32 @@ This project integrates an IoT-enabled air hockey table with a remotely-controll
 ## 🏒 AirHockey
 
 ### Mechanical
+The skeleton of the hockey table is constructed using a robust framework of aluminum extrusions, providing both strength and versatility. The main structure utilizes 20x20 mm sigma profile extrusions, offering an excellent balance of lightweight design and structural integrity. For enhanced stability and support, particularly along the edges, 20x40 mm extrusions are employed for the top bars, ensuring a rigid and durable frame.
+
+The playing surface of the table is crafted from high-quality plexy glass, chosen for its smooth texture and durability. This surface is meticulously perforated with 1 mm diameter holes arranged in a precise grid pattern. These holes serve a crucial function in the air hockey system, allowing for even air distribution across the entire playing field, which is essential for smooth puck movement.
+
+To contain the gameplay and provide a clean aesthetic, the sides of the table are enclosed using medium-density fiberboard (MDF). This material was selected for its cost-effectiveness, ease of fabrication, and ability to be finished smoothly. The MDF side panels not only define the boundaries of the playing area but also contribute to the overall structural integrity of the table.
+
+The entire assembly is held together using a combination of M5 and M6 screws and nuts. This hardware selection ensures a secure connection between all components while allowing for potential disassembly or modifications in the future. The use of standardized fasteners also simplifies maintenance and repairs.
+This thoughtful design and material selection results in a hockey table that is not only sturdy and functional but also aesthetically pleasing and adaptable to various gameplay modifications or technological integrations.
+
+There is a 'balcony' under the fans which is a housing for electronic components.
+
 
 Our air hockey table is equipped with:
 
 - High-powered air blowers
+- High energy power supply for leds 
 - Camera setup for object detection/tracking 
 - LED lighting system for enhanced gameplay experience
 - Remotely controllable side obstacles 
 
 ### Software
+The software interfaces with 13 neopixel LED lines, strategically positioned and serially connected around the table. These LEDs are carefully wired and soldered to ensure stable connections between the power supply and each LED, enabling dynamic lighting effects during gameplay.
+
+Complementing the LED system are mini electronic side obstacles, each equipped with its own controller. These obstacles are connected using jumper wires and breadboards, allowing for independent operation and easy modifications. This modular approach facilitates maintenance and potential future upgrades.
+
+The combination of serially connected LED lines and independently controlled obstacles creates a flexible and responsive gaming platform, capable of supporting various gameplay scenarios and interactive features.
 
 The air hockey system is powered by:
 

@@ -14,8 +14,7 @@
 - [License](#license)
 
 ## 🎯 Project Abstract
-
-This project combines the excitement of air hockey with cutting-edge robotics technology. It features a fully automated air hockey table and a mini robot designed for various tasks. The aim is to showcase the integration of mechanical engineering and software development in creating interactive and entertaining systems.
+This project integrates an IoT-enabled air hockey table with a remotely-controllable microrobot, creating diverse game scenarios. It showcases the fusion of mechanical engineering and software development to produce an interactive, entertaining system that reimagines classic gameplay through modern technology
 
 ## 🏒 AirHockey
 
@@ -23,19 +22,18 @@ This project combines the excitement of air hockey with cutting-edge robotics te
 
 Our air hockey table is equipped with:
 
-- High-powered air blowers for frictionless puck movement
-- Reinforced playing surface for durability
+- High-powered air blowers
+- Camera setup for object detection/tracking 
 - LED lighting system for enhanced gameplay experience
-- Automatic puck return mechanism
+- Remotely controllable side obstacles 
 
 ### Software
 
 The air hockey system is powered by:
 
-- Computer vision algorithms for real-time puck tracking
-- AI-driven opponent simulation
-- User interface for game settings and score tracking
-- Integration with the mini robot for autonomous gameplay
+- Computer vision algorithms for real-time puck and leds
+- Pip installable python code
+  
 
 ## 🤖 Mini Robot
 
@@ -44,7 +42,7 @@ The air hockey system is powered by:
 The mini robot features:
 
 - Compact, agile design for quick movements
-- Precision actuators for accurate positioning
+- Remotely Controllable motors
 - Durable chassis to withstand impacts
 - Modular design for easy maintenance and upgrades
 
@@ -52,10 +50,8 @@ The mini robot features:
 
 The mini robot is controlled by:
 
-- Advanced path-planning algorithms
-- Real-time sensor data processing
-- Machine learning models for adaptive gameplay
-- Wireless communication with the main air hockey system
+- Wireless communication with the main computer using socket connection
+
 
 ## 🤝 Contribution
 
@@ -74,5 +70,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ---
 
 <p align="center">
-  Made with ❤️ by the AirHockey and Mini Robot Team
+  Made with ❤️ by the AirHockey and Mini Robot Team:
+  Berk Ünlü 
+  Sait Burak Yücekaya
+  Yunus Çınar Kızıltepe
+  Tan Çağatay Acar
+  Doğukan Özoğul
+  Candaş Uysal
 </p>

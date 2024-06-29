@@ -60,6 +60,8 @@ The air hockey system is powered by:
 
 ### Mechanical
 
+The mini robot's chassis is additively manufactured using Creality 3D printers, offering a lightweight yet durable design. The chassis is engineered to house and protect all electronic components from external damage. Two strategically positioned motors control the robot's movement, enabling precise maneuvering and agile performance on the air hockey table. This combination of 3D-printed structure and dual-motor system results in a compact, resilient robot capable of swift and accurate movements during gameplay.
+
 The mini robot features:
 
 - Compact, agile design for quick movements

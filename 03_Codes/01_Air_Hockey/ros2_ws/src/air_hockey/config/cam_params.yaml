@@ -1,0 +1,4 @@
+/**:
+    ros__parameters:
+      video_device: "/dev/video0"
+      image_size: [1280,720]

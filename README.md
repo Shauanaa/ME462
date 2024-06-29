@@ -96,8 +96,16 @@ project_root/
 To get started with the AirHockey and Mini Robot project, follow these steps:
 
 #### 1. Clone the Repository
+'''
+git clone https://github.com/Shauanaa/ME462.git
+cd ME462
+'''
+
 #### 2. Install Dependencies
 Ensure you have Python installed, then run:
+'''
+pip install -e .
+'''
 
 #### 3. Configure the System
 - Update the `config.py` file with your specific settings, including the IP address of the mini robot.

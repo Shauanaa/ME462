@@ -1,6 +1,6 @@
 # 🏒 AirHockey and Mini Robot Project
+![Project Banner][istockphoto-1455938819-612x612](https://github.com/Shauanaa/ME462/assets/44114999/e2ede8d3-9929-4a0c-93e1-5609a7262820)
 
-![Project Banner]([https://example.com/project-banner.jpg](https://media.istockphoto.com/id/1455938819/vector/air-hockey-table-arcade-game-isometric-illustration-vector.jpg?s=612x612&w=0&k=20&c=01sD6zaw-GwAPee0aX5FhbHU3n1OqeTkeCjrLKxj9rY=))
 
 ## 📚 Table of Contents
 - [Project Abstract](#project-abstract)

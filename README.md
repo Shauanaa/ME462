@@ -10,13 +10,15 @@
 - [Mini Robot](#mini-robot)
   - [Mechanical](#mechanical-1)
   - [Software](#software-1)
+- [How to Use the Code](#how-to-use-the-code)
 - [Cautions](#cautions)
 - [Contribution](#contribution)
 - [License](#license)
 
 
+
 ## 🎯 Project Abstract
-This project integrates an IoT-enabled air hockey table with a remotely-controllable microrobot, creating diverse game scenarios. It showcases the fusion of mechanical engineering and software development to produce an interactive, entertaining system that reimagines classic gameplay through modern technology
+This project integrates an IoT-enabled air hockey table with a remotely-controllable microrobot, creating diverse game scenarios. It showcases the fusion of mechanical engineering and software development to produce an interactive, entertaining system that reimagines classic gameplay through modern technology.
 
 ## 🏒 AirHockey
 
@@ -52,9 +54,22 @@ The mini robot features:
 
 The mini robot is controlled by:
 
-- Wireless communication with the main computer using socket connection
+- Wireless communication with the main computer using micro ROS connection
 
 ## 🖥️ How to Use the Code
+
+The folder structure is descripted as below:
+project_root/
+│
+├── AirHockey/
+│   └── Software/
+│       ├── neopixel_led.py
+│       └── camera_controller.py
+│
+└── MiniRobot/
+    └── Software/
+        └── minirobot_controller.py
+
 
 To get started with the AirHockey and Mini Robot project, follow these steps:
 

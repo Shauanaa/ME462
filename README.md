@@ -1,5 +1,5 @@
 # 🏒 AirHockey and Mini Robot Project
-![istockphoto-1455938819-612x612](https://github.com/Shauanaa/ME462/assets/44114999/e2ede8d3-9929-4a0c-93e1-5609a7262820)
+![istockphoto-1455938819-612x612 (1)](https://github.com/Shauanaa/ME462/assets/44114999/967f291a-d41e-4c4b-b271-bce5b575ca1f)
 
 
 ## 📚 Table of Contents
@@ -12,6 +12,7 @@
   - [Software](#software-1)
 - [Contribution](#contribution)
 - [License](#license)
+
 
 ## 🎯 Project Abstract
 This project integrates an IoT-enabled air hockey table with a remotely-controllable microrobot, creating diverse game scenarios. It showcases the fusion of mechanical engineering and software development to produce an interactive, entertaining system that reimagines classic gameplay through modern technology

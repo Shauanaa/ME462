@@ -7,7 +7,7 @@
 - [AirHockey](#airhockey)
   - [Mechanical](#mechanical)
   - [Software](#software)
-- [Mini Robot](#mini-robot)
+- [Mini Robot](#🤖 Mini Robot)
   - [Mechanical](#mechanical-1)
   - [Software](#software-1)
 - [How to Use the Code](#how-to-use-the-code)
@@ -82,14 +82,14 @@ The folder structure is descripted as below:
 ```
 project_root/
 │
-├── AirHockey/
-│   └── Software/
+├── /03_Codes
+│   └── 01_Air_Hockey/
 │       ├── neopixel_led.py
+|       ├── qr_code_label_and_centroid_detection.py
 │       └── camera_controller.py
-│
-└── MiniRobot/
-    └── Software/
-        └── minirobot_controller.py
+│   └── 02_Micro_Robot/
+│       └── micro_robot.py
+
 ```
 
 

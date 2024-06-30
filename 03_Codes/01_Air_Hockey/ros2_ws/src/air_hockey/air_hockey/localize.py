@@ -36,7 +36,7 @@ class LocalizationNode(Node):
                 pitch, yaw, roll = self.rotationMatrixToEulerAngles(tag.pose_R)
                 if tag.tag_id not in self.pose_pubs.keys():
                     self.pose_pubs[tag.tag_id] = self.create_publisher(Pose2D, f"/agent_{tag.tag_id}/pose", 1)
-                self.pose_pubs[tag.tag_id].publish(Pose2D(x=tag.pose_t[0][0], y=tag.pose_t[1][0], theta=yaw))
+                self.pose_pubs[tag.tag_id].publish(Pose2D(x=tag.pose_t[0][0], y=tag.pose_t[1][0], theta=roll))
                 print(tag.tag_id)
                 print(tag.pose_t)
                 print(tag.pose_R)

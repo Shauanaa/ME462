@@ -185,6 +185,7 @@ For more detailed instructions and troubleshooting, please reach out the contrib
 ## ⚠️ Cautions
 
 When using this system, please be aware of the following:
+- 🛑PLEASE UNPLUG ALL OF THE CABLES WHILE OPENING THE ELECTRONIC DEVICES OF THE AIRHOCKEY TABLE🛑
 
 - The IP address of the Raspberry Pi changes when connecting to different networks. Always ensure you have the correct IP address before attempting to connect to the Raspberry Pi.
 - Do not forget to change the shebang of the ros2 codes

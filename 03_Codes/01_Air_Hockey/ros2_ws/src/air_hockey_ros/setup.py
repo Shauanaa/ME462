@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'air_hockey'
+package_name = 'air_hockey_ros'
 
 setup(
     name=package_name,
@@ -20,11 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'localization = air_hockey.localize:main',
-            'neopixel = air_hockey.neopix:main',
-            'neopixel_demo = air_hockey.neopixel_demo:main',
-            'commander = air_hockey.commander:main',
-            'commander_demo = air_hockey.commander_demo:main',
+            'localization = air_hockey_ros.localize:main',
+            'neopixel = air_hockey_ros.neopix:main',
+            'neopixel_demo = air_hockey_ros.neopixel_demo:main',
+            'commander = air_hockey_ros.commander:main',
+            'commander_demo = air_hockey_ros.commander_demo:main',
         ],
     },
 )

@@ -1,5 +1,5 @@
 # Air Hockey ROS2 Workspace
-This workspace contains the `air_hockey` package. All details are explained in [here](/03_Codes/01_Air_Hockey/README.md).
+This workspace contains the `air_hockey_ros` package. All details are explained in [here](/03_Codes/01_Air_Hockey/README.md).
 
 ## Setting Up the Environment
 You need to set up a virtual env in a specific place. To do so, run the following commands:

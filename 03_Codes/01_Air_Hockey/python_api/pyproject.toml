@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "air_hockey"
-version = "0.1.2"
+version = "0.1.3"
 authors = [
   { name="Tan Çağatay Acar", email="tancagatayacar@gmail.com" },
 ]

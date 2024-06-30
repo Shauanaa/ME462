@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
 name='air_hockey',
-version='0.1.2',
+version='0.1.3',
 author='Tan Çağatay Acar',
 author_email='acartancagatay@hotmail.com',
 description='Python package for ROS integrated air-hockey table designed at METU ROMER',

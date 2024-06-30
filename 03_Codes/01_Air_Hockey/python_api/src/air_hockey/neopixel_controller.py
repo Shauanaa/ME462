@@ -16,11 +16,12 @@ class NeoPixel_Controller:
         self.num_pixels = (self.width*2 - 1)*self.height
 
         self._pixels = neopixel.NeoPixel(pixel_pin, self.num_pixels, brightness=brightness, auto_write=False, pixel_order=order)
-        self._pixels.fill((0, 0, 0))
-        for i in range(self.height):
-            for j in range(self.width):
-                    self._pixels[j*2+i*(self.width*2 - 1)] = (0, 0, 0) if dont_show_default else default_color
-        self._pixels.show()
+        if not dont_show_default:
+            self._pixels.fill((0, 0, 0))
+            for i in range(self.height):
+                for j in range(self.width):
+                        self._pixels[j*2+i*(self.width*2 - 1)] = default_color
+            self._pixels.show()
 
     def setFromFlatArray(self, array):
         for i in range(self.height):

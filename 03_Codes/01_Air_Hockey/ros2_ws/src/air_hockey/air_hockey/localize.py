@@ -14,22 +14,24 @@ class LocalizationNode(Node):
         super().__init__("Localization")
         self.bridge = CvBridge()
         self.detector = dt_apriltags.Detector(searchpath=['apriltags'],
-                                        families='tag36h11',
+                                        families='tag36h11', #tagCircle49h12 , tag36h11
                                         nthreads=4,
                                         quad_decimate=1,
                                         quad_sigma=0.25,
                                         refine_edges=0,
                                         decode_sharpening=0.25,
+                                        # max_hamming=1,
                                         debug=0)
         self.image_sub = self.create_subscription(Image, "/image_raw", self.image_callback, 1)
         self.pose_pubs = {}
+        self.get_logger().info("Initialized!")
 
     def image_callback(self, msg):
         try:
             frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
             frame = np.array(frame, dtype=np.uint8)
             frame = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-            tags = self.detector.detect(frame, estimate_tag_pose=True, camera_params=[995.52534,993.49579,649.25127852,366.80582718], tag_size=0.065)
+            tags = self.detector.detect(frame, estimate_tag_pose=True, camera_params=[995.52534,993.49579,649.25127852,366.80582718], tag_size=0.05)
             for tag in tags:
                 pitch, yaw, roll = self.rotationMatrixToEulerAngles(tag.pose_R)
                 if tag.tag_id not in self.pose_pubs.keys():

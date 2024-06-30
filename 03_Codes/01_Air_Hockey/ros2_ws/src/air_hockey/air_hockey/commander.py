@@ -24,7 +24,7 @@ class CommanderNode(Node):
         if len(msg.data) != 3:
             self.get_logger().warning(f'Command should only have 3 elements, got {len(msg.data)}. Not sending the command.', throttle_duration_sec=1)
             return
-        send_str = f"{chr(ord('a'))}{self.constrain(msg.data[0]):+04}{self.constrain(msg.data[1]):+04}\n"
+        send_str = f"{chr(ord('a') + 1)}{self.constrain(msg.data[0]):+04}{self.constrain(msg.data[1]):+04}{self.constrain(msg.data[2], 0):+04}\n"
         self.port.write(send_str.encode())
         print(send_str)
 
@@ -32,7 +32,7 @@ class CommanderNode(Node):
         if len(msg.data) != 3:
             self.get_logger().warning(f'Command should only have 3 elements, got {len(msg.data)}. Not sending the command.', throttle_duration_sec=1)
             return
-        send_str = f"{chr(ord('a') + 1)}{self.constrain(msg.data[0]):+04}{self.constrain(msg.data[1]):+04}{self.constrain(msg.data[2]):+04}\n"
+        send_str = f"{chr(ord('a') + 1)}{self.constrain(msg.data[0]):+04}{self.constrain(msg.data[1]):+04}{self.constrain(msg.data[2], 0):+04}\n"
         self.port.write(send_str.encode())
         print(send_str)
 

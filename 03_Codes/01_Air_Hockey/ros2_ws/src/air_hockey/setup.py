@@ -22,7 +22,9 @@ setup(
         'console_scripts': [
             'localization = air_hockey.localize:main',
             'neopixel = air_hockey.neopix:main',
+            'neopixel_demo = air_hockey.neopixel_demo:main',
             'commander = air_hockey.commander:main',
+            'commander_demo = air_hockey.commander_demo:main',
         ],
     },
 )

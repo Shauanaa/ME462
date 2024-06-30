@@ -12,7 +12,7 @@ pip3 install -r path/to/ws/requirements.txt
 ```
 Also you need to update the shebang in each python file such that "peter" is replaced with your username.
 
-To build the package, come to this folder and type `colcon build`. Then source the environment with `source ./install/setup.bash`.
+To build the package, come to this folder, make sure you activated the virtual environment, and type `colcon build`. Then source the environment with `source ./install/setup.bash`.
 
 ## Permissions for NeoPixel GPIO Access
 In order to be able to control the NeoPixels, run the following commands:

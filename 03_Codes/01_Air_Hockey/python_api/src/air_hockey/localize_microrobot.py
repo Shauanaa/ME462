@@ -1,4 +1,3 @@
-import numpy as np
 import cv2
 import dt_apriltags
 from math import atan2, sqrt
@@ -7,7 +6,7 @@ class Locator:
     def __init__(self, capture_device:int|str=0):
         self._cap = cv2.VideoCapture(capture_device, cv2.CAP_V4L2)
         self._cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
-        self.detector = dt_apriltags.Detector(searchpath=['apriltags'],
+        self._detector = dt_apriltags.Detector(searchpath=['apriltags'],
                                         families='tag36h11', #tagCircle49h12 , tag36h11
                                         nthreads=4,
                                         quad_decimate=1,
@@ -27,17 +26,17 @@ class Locator:
         if not ret:
             return None
         frame = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-        tags = self.detector.detect(frame, estimate_tag_pose=True, camera_params=[995.52534,993.49579,649.25127852,366.80582718], tag_size=0.05)
+        tags = self._detector.detect(frame, estimate_tag_pose=True, camera_params=[995.52534,993.49579,649.25127852,366.80582718], tag_size=0.05)
         results = {}
         for tag in tags:
-            pitch, yaw, roll = self.rotationMatrixToEulerAngles(tag.pose_R)
-            print(tag.tag_id)
-            print(tag.pose_t)
-            print(tag.pose_R)
+            pitch, yaw, roll = self._rotationMatrixToEulerAngles(tag.pose_R)
+            # print(tag.tag_id)
+            # print(tag.pose_t)
+            # print(tag.pose_R)
             results[tag.tag_id] = (tag.pose_t[0][0], tag.pose_t[1][0], yaw)
         return results
 
-    def rotationMatrixToEulerAngles(self, R):
+    def _rotationMatrixToEulerAngles(self, R):
         # Extract elements from the rotation matrix
         R11 = R[0][0]
         R12 = R[0][1]
@@ -55,7 +54,13 @@ class Locator:
         return pitch, yaw, roll
 
 def main(args=None):
-    node = Locator()
+    import time
+
+    locator = Locator()
+    while True:
+        print(locator.getPoses())
+        time.sleep(0.5)
+        
 
 if __name__ == "__main__":
     main()

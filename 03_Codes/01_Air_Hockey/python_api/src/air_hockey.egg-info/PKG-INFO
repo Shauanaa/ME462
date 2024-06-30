@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: air_hockey
+Version: 0.1.2
+Summary: Python package for ROS integrated air-hockey table designed at METU ROMER
+Author-email: Tan Çağatay Acar <tancagatayacar@gmail.com>
+Project-URL: Homepage, https://github.com/Shauanaa/ME462
+Project-URL: Issues, https://github.com/Shauanaa/ME462/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Air Hockey
+The codes that run on the Raspberry Pi of the air hockey table. The Raspberry Pi has Ubuntu 24.04 Server running.
+
+### Python API
+
+#### NeoPixel Controller
+Python library to control NeoPixels of the air hockey table. Example usage:
+```
+from air_hockey.neopixel_controller import NeoPixel_Controller
+
+controller = NeoPixel_Controller()
+
+controller.fill((100, 0, 255)) # Set every pixel the specified rgb color.
+
+controller.setFromFlatArray([(100, 0, 255),(80, 20, 255),(60, 40, 255),(40, 60, 255),(20, 80, 255),(0, 100, 255)]) # Sets pixels from array in order.
+```
+#### Commander
+Python library to control micro robots wirelessly. Desk fan example:
+```
+from air_hockey.microrobot_commander import Commander
+import time,math
+
+commander = Commander()
+theta = 0
+while True:
+    mag = 80*math.sin(theta)
+    commander.send(1, int(mag), int(-mag), 200)
+    theta = theta + 0.15
+    time.sleep(0.1)
+```
+#### Localization
+Python library to obtain pose data of micro robots. Example usage:
+```
+from air_hockey.localize_microrobot import Locator
+import time
+
+locator = Locator()
+while True:
+    print(locator.getPoses())
+    time.sleep(0.5)
+```

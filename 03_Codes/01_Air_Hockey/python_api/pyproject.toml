@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "numpy>=1.20,<2.0", "opencv_python_headless>=4.9", "Adafruit_Blinka>=8.45", "adafruit_circuitpython_neopixel>=6.3.11", "dt_apriltags>=3.1.7", "pyserial>=3.5"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "air_hockey"
+version = "0.1.2"
+authors = [
+  { name="Tan Çağatay Acar", email="tancagatayacar@gmail.com" },
+]
+description = "Python package for ROS integrated air-hockey table designed at METU ROMER"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Shauanaa/ME462"
+Issues = "https://github.com/Shauanaa/ME462/issues"

@@ -85,7 +85,34 @@ project_root/
 │
 ├── /03_Codes
 │   └── 01_Air_Hockey/
-│       ├── neopixel_led.py
+│       ├── python_api/
+│           └── microrobot_commander.py
+│           ├── neopixel_controller.py
+│       ├── ros2_ws/
+│           └── src/air_hockey/
+│               └── air_hockey/
+│                   └── __init__.py
+│                   ├── commander.py
+│                   ├── commander_demo.py
+│                   ├── localize.py
+│                   ├── neopix.py
+│                   ├── neopixel_demo.py
+│               ├── config/
+│                   └── cam_params.yaml
+│               ├── resource/
+│                   └── air_hockey
+│               ├── test/
+│                   └── test_copyright.py
+│                   ├── test_flake8.py
+│                   ├── test_pep257.py
+│               ├── LICENSE
+│               ├── package.xml
+│               ├── setup.cfg
+│               ├── setup.py
+│           ├── 99-gpio.rules
+│           ├── neopixel_test.py
+│           ├── requirements.txt
+│           ├── README.md
 |       ├── qr_code_label_and_centroid_detection.py
 │       └── camera_controller.py
 │       └── Readme.md
@@ -126,8 +153,8 @@ colcon build
 Run the commander code and publish to the topic.
 
 #### 6. Additional Commands
-- To calibrate the camera: `python calibrate_camera.py`
-- To test the LED system: `python test_leds.py`
+- To segment the leds from the camera image : `python led_finder.py`
+- To detect the QR code labels of the robots and positions of them: `python qr_code_label_and_centroid_detection.py`
 
 For more detailed instructions and troubleshooting, please refer to the `docs` folder.
 

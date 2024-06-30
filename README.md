@@ -7,9 +7,11 @@
 - [AirHockey](#airhockey)
   - [Mechanical](#mechanical)
   - [Software](#software)
+  - [Electronic](#electronic-airhockey)
 - [Micro Robot](#micro-robot)
   - [Mechanical](#mechanical-1)
   - [Software](#software-1)
+  - [Electronic](#electronic-microrobot)
 - [How to Use the Code](#how-to-use-the-code)
 - [Cautions](#cautions)
 - [Contribution](#contribution)
@@ -55,6 +57,9 @@ The air hockey system is powered by:
 - Computer vision algorithms for real-time puck and leds
 - Pip installable python code
   
+### Electronics
+- Please see the readme.md documents under the [![GitHub Logo](https://github.com/Shauanaa/ME462/blob/main/03_Codes/01_Air_Hockey/README.md)](https://github.com)
+  
 
 ## 🤖 Micro Robot
 
@@ -75,6 +80,13 @@ The micro robot features two motors controlled by an ESP8266 microcontroller. An
 The micro robot is controlled by:
 
 - You by publishing a message to the relevant topic, Raspberry Pi communicating with a controller ESP8266 via serial communication to send commands, controller ESP communicating with the micro robot ESP8266 using ESP-NOW protocol, and finally, the micro robot ESP applying the command.
+### Electronics
+- The schematics of the microrobot are provided as following:
+  ![MicroRobotCircuit_bb (1)](https://github.com/Shauanaa/ME462/assets/44114999/ae0b8cf6-30b0-49f3-9239-375acf00825d)
+- More technical drawing is as follows:
+   ![MicroRobotCircuit_schem (1)](https://github.com/Shauanaa/ME462/assets/44114999/1906de21-5c7a-4281-8005-6e14d36fd1b1)
+
+
 
 ## 🖥️ How to Use the Code
 
@@ -175,6 +187,7 @@ For more detailed instructions and troubleshooting, please reach out the contrib
 When using this system, please be aware of the following:
 
 - The IP address of the Raspberry Pi changes when connecting to different networks. Always ensure you have the correct IP address before attempting to connect to the Raspberry Pi.
+- Do not forget to change the shebang of the ros2 codes
 
 
 ## 🤝 Contribution

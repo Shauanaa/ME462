@@ -142,21 +142,32 @@ pip install -e .
 ```
 
 #### 3. Configure the System
-- In Raspberry pi linux computer, you must write:
-```
-colcon build
-```
+##### For Python API:
+  1) Install the requirements : `pip install neopixels serial numpy`
+##### For ROS2:
+  1) Create a venv: `python3 -m venv ~/ros2_venv`
+  2) activate the venv `source ~/ros2_venv/bin/activate`
+  3) install the required packages `pip install rclpy neopixels board serial`
 
 #### 4. Run the Air Hockey System
-
-#### 5. Control the Mini Robot
-Run the commander code and publish to the topic.
+##### For Python API:
+  1) Install the requirements : `pip install neopixels serial numpy`
+  2) Then simply run the codes: `python microrobot_commander.py` and `python neopixel_controller.py
+##### For ROS2:
+  1) navigate to the venv `cd ~/ros2_ws`
+  2) Build your workspace: `colcon build`
+  3) activate the venv `source ~/ros2_venv/bin/activate`
+  
+#### 5. Control the Micro Robot
+Run the desired codew as folloing:`ros2 run air_hockey <package_name>`
 
 #### 6. Additional Commands
 - To segment the leds from the camera image : `python led_finder.py`
 - To detect the QR code labels of the robots and positions of them: `python qr_code_label_and_centroid_detection.py`
+- To test neopixels in ROS2: `python 03_Codes/01_Air_Hockey/ros2_ws/src/air_hockey/air_hockey/neopixel_demo.py`
+- To test commander tools in ROS2: `python 03_Codes/01_Air_Hockey/ros2_ws/src/air_hockey/air_hockey/commander_demo.py`
 
-For more detailed instructions and troubleshooting, please refer to the `docs` folder.
+For more detailed instructions and troubleshooting, please reach out the contributors and open an issue.
 
 
 ## ⚠️ Cautions

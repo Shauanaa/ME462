@@ -58,7 +58,7 @@ The air hockey system is powered by:
 - Pip installable python code
   
 ### Electronics
-- Please see the readme.md documents under the [![GitHub Logo](https://github.com/Shauanaa/ME462/blob/main/03_Codes/01_Air_Hockey/README.md)](https://github.com)
+- Please see the readme.md documents under the[Link to README](https://github.com/Shauanaa/ME462/blob/main/03_Codes/01_Air_Hockey/README.md)
   
 
 ## 🤖 Micro Robot
